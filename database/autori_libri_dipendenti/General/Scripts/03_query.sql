@@ -1,0 +1,4 @@
+-- SELECT * FROM autori;
+-- SELECT * FROM libri;
+-- SELECT * FROM dipendenti;
+-- SELECT * FROM reparti;
