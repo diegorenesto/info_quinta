@@ -1,1 +1,0 @@
-{"resources":{"Scripts/01_crea_tabelle.sql":{"default-datasource":"mysql8-199d5444f3d-692b52edec6e1337","default-catalog":"studenti_db"},"Scripts/02_inserisci_dati.sql":{"default-datasource":"mysql8-199d5444f3d-692b52edec6e1337","default-catalog":"studenti_db"},"Scripts/03_query.sql":{"default-datasource":"mysql8-199d5444f3d-692b52edec6e1337","default-catalog":"studenti_db"}}}
