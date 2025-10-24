@@ -1,0 +1,7 @@
+create table studenti(
+id int auto_increment PRIMARY KEY,
+cognome varchar(20),
+nome varchar(20),
+materia varchar(20),
+
+);

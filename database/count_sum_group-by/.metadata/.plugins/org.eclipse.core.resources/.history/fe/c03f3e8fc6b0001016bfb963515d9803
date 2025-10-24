@@ -1,0 +1,15 @@
+create table studenti(
+id int auto_increment PRIMARY KEY,
+cognome varchar(20),
+nome varchar(20),
+materia varchar(20),
+voto int
+);
+
+insert into studenti(cognome, nome, materia, voto) values
+("Renesto", "Diego", "Informatica", 7),
+("Pavarin", "Mattia", "Italiano", 7),
+("Bazaj", "Francesco", "Inglese", 9),
+("Zanforlin", "Nicolo'", "Motoria", 10),
+("Pizzo", "Simone", "Moda", -1),
+("Guezam", "Mohamed", "Informatica", 8),
