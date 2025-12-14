@@ -1,0 +1,5 @@
+studente1@Diego - Renesto - 9
+studente2@Simone - Pizzo - 2
+studente3@Nicolò - Zanforlin - 4
+studente4@Francesco - Bazaj - 7
+studente5@Mattia - Pavarin - 8
