@@ -1,36 +1,30 @@
 <?php
-
-// impostazione che permette all'operatore di conoscere il tipo di dato in ingresso e uscita (riuscendo anche a dare più tipi di dato ai parametri)
-function somma(int|float $a, int|float $b): int|float
+// consente di conoscere il tipo di dato in input/output (da anche più tipi ai parametri)
+function somma(int|float $a, int|float $b): int|float // UNION
 {
     return $a + $b;
 }
-
 
 function stampa(int|string $var): void
 {
     echo "Hai passato " . $var;
 }
 
-
-function saluta(?string $nome): string //accetta o null o string
+function saluta(?string $nome): string //accetta o null o string (NULLABLE)
 {
-    return "Ciao " . ($nome ?? "Ospite") . "<br>"; // se null restituisce "Ospite"
+    return "Ciao " . ($nome ?? "Ospite") . "<br>"; // se null ritorna "Ospite"
 }
 
-
 $var = 10;
-function funct(&$var)
+function funct(&$var): void
 {
     $var = $var + 1;
 }
 
-
-function somma_totale(...$numeri): int|float
+function somma_totale(...$numeri): int|float // VARIADIC
 {
     return array_sum($numeri);
 }
-
 
 // TEST FUNZIONI
 echo "somma()<br>";
