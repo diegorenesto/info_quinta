@@ -1,14 +1,16 @@
 <?php
 
-$db = new PDO(
-    "mysql:host=192.168.60.144;dbname=diego_renesto_itis;charset=utf8mb4",
-    "diego_renesto",
-    "principiano.disonori.",
-    [
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    ]
-);
+require "db_conn.php";
+
+$db_config = require "configuration/db_configuration.php";
+
+$db = db_conn::getDB($db_config);
+
+//$db = null;
+//if (is_null($db)) {
+//    exit("Errore col DB");
+//}
+
 
 // READ 1
 $query = 'SELECT * FROM studenti';
@@ -29,7 +31,6 @@ try {
     echo "A DB error occured. Please try again later";
     // non metto il getMessage perché interessano a me programmer e non all'utente
 }
-
 
 /*
 // READ 2
@@ -52,7 +53,7 @@ try {
 }
 */
 
-
+/*
 // CREATE
 $query = 'INSERT INTO studenti(nome, cognome, media, data_iscrizione)
           VALUES(:nome, :cognome, :media, NOW())';
@@ -68,3 +69,48 @@ try {
 } catch (PDOException $e) {
     echo "A DB error occured. Please try again later";
 }
+*/
+
+/*
+// UPDATE
+$query = 'UPDATE studenti
+SET media = :media
+WHERE nome = :nome';
+
+try {
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':nome', 'Antonio', PDO::PARAM_STR);
+    $stmt->bindValue(':media', 10, PDO::PARAM_INT);
+    $stmt->execute();
+
+    if ($stmt->rowCount() === 0) {
+        echo "No rows were updated";
+    } else {
+        echo "Update successful";
+    }
+    echo '<br>';
+} catch (PDOException $e) {
+    echo "A DB error occurred. Please try again later";
+    echo '<br>' . $e . '<br>';
+}
+*/
+
+/*
+// DELETE
+$query = 'DELETE FROM studenti WHERE nome = :nome';
+
+try {
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':nome', 'Lucy', PDO::PARAM_STR);
+    $stmt->execute();
+
+    if ($stmt->rowCount() === 0) {
+        echo "Delete failed";
+    } else {
+        echo "Record deleted";
+        $stmt->closeCursor();
+    }
+} catch (PDOException) {
+    echo "A DB error occured. Please try again later";
+}
+*/
