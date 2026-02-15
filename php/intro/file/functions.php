@@ -29,7 +29,7 @@ fclose($file_r);
 echo "<br>";
 
 // FILE_PUT_CONTENTS
-$put_test = "test file_put_contents da functions.php";
+$put_test = "test file_put_contents da db_conn_biblioteca.php";
 file_put_contents("txt/test_put.txt", $put_test);
 
 // FILE_GET_CONTENTS

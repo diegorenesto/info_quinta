@@ -1,0 +1,19 @@
+PAGINA 1 quanti corsi vuoi attivare?
+
+Seconda pagina iscrizione corsi
+
+Terza pagina iscrizione corsi
+cognome nome corso tabella
+
+
+// corsi
+sistemi e reti
+informatica
+statistica
+contabilita
+marketing
+tecnologie
+meccatronica
+elettronica
+chimica organica
+robotica

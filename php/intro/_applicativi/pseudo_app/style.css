@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.corso-box {
+    width: 100%;
+    border: 2px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select {
+    min-width: 220px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.duplicato {
+    background-color: #ffcccc;
+}
+
+h1 {
+    color: #333;
+}
+
+.info {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border-left: 4px solid #007bff;
+}
+
+.warning {
+    background-color: #fff3cd;
+    border-color: #ffc107;
+    color: #856404;
+}
