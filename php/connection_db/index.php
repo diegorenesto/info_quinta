@@ -5,7 +5,7 @@ require "db_conn.php";
 $db_config = require "config/db_config_casa.php";
 //$db_config = require "config/db_config_scuola.php";
 
-$db = db_connBiblioteca::getDB($db_config);
+$db = db_conn::getDB($db_config);
 
 //$db = null;
 //if (is_null($db)) {
