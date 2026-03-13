@@ -3,8 +3,8 @@ require "db_conn.php";
 $db_config = require "config/db_config_scuola.php";
 
 $db = db_conn::getDB($db_config);
-
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,25 +17,17 @@ $db = db_conn::getDB($db_config);
 
 <body>
 <form method="POST" action="esito_POST.php">
-
     Nome: <br>
-    <input type="text" name="nome"><br><br>
-
+    <input type="text" name="nome"><br>
     Cognome: <br>
-    <input type="text" name="cognome"><br><br>
-
+    <input type="text" name="cognome"><br>
     Numero Tessera: <br>
-    <input type="number" name="numero_tessera"><br><br>
-
+    <input type="number" name="numero_tessera"><br>
     Data Iscrizione: <br>
-    <input type="date" name="data_iscrizione"><br><br>
-
+    <input type="date" name="data_iscrizione"><br>
     Password: <br>
-    <input type="password" name="password"><br><br>
-
+    <input type="password" name="password"><br>
     <input type="submit" value="Registra">
-
 </form>
-
 </body>
 </html>
