@@ -1,5 +1,5 @@
 <?php
-$message = $_GET["msg"];
+//$message = $_GET["msg"];
 
 ?>
 
@@ -13,6 +13,7 @@ $message = $_GET["msg"];
     <title>Document</title>
 </head>
 <body>
+
 <p>
     <?= $message ?>
 </p>
